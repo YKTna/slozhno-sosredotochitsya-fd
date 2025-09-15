@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #353430;
+  background-color: #000028;
   color: var(--color);
   font-size: 18px;
   font-family: 'IBM Plex mono';
@@ -328,6 +328,7 @@
   .hard-to-concentrate {
     display: grid;
     grid-template-columns: 1fr 472px;
+    padding-bottom: 80px;
   }
 
   .hard-to-concentrate .title-decor-h2 {
@@ -339,12 +340,10 @@
     padding-bottom: 15px;
   }
 
-  .hard-to-concentrate {
-    padding-bottom: 80px;
-  }
-
   .concentration-goldfish {
     padding-bottom: 73px;
+    display: grid;
+    grid-template-columns: 1fr 472px;
   }
 
   .reduces-concentration {
@@ -353,11 +352,6 @@
 
   .content-section:last-child {
     padding-bottom: 60px;
-  }
-
-  .concentration-goldfish {
-    display: grid;
-    grid-template-columns: 1fr 472px;
   }
 
   .title-decor-images {
@@ -494,6 +488,7 @@
 
   .footer {
     padding: 141px 20px 20px 20px;
+    min-height: 828px;
   }
 
   .footer .corner-top {
