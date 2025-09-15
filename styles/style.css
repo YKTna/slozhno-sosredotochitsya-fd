@@ -59,11 +59,11 @@
   content: "";
   position: absolute;
   display: inline-block;
-  width: 9px; 
+  width: 9px;
   height: 9px;
   right: 11px;
   top: 9px;
-  background-color: var(--color-text-h2); 
+  background-color: var(--color-text-h2);
   border-radius: 50%;
   box-shadow: 0 0 4px 3px var(--color-text-h2);
 }
@@ -71,7 +71,7 @@
 .header__theme-menu {
   align-self: center;
   grid-row: 1 / 3;
-  padding-bottom: 27px;
+  margin-top: 5px;
 }
 
 .header__theme-menu-list {
@@ -85,7 +85,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   color: var(--color-text-h2);
 }
 
@@ -118,8 +118,9 @@
 }
 
 .container-header-title {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   grid-row: 3 / 4;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -135,14 +136,14 @@
   justify-self: stretch;
   align-self: center;
   max-height: 117px;
-  margin-bottom: 5px;
+  margin-bottom: 68px;
   grid-row: 4 / 5;
   background-color: var(--accent-color);
 }
 
 .intro {
   display: block;
-  max-width: 315px;
+  max-width: 330px;
   padding-right: 20px;
   line-height: 23.4px;
   color: var(--color-text);
@@ -172,12 +173,25 @@
 .header .corner-bottom {
   position: absolute;
   left: 0px;
-  bottom: 0px;
+  bottom: 20px;
 }
 
 .section-main {
   padding: 10px 10px  0px 10px;
   background-color: var(--background-color);
+}
+
+.content-section {
+  padding-bottom: 50px;
+}
+
+.hard-to-concentrate {
+  padding-top: 10px;
+}
+
+.concentration-goldfish {
+  padding-top: 5px;
+  padding-bottom: 42px;
 }
 
 .title-decor-h2 {
@@ -213,16 +227,16 @@
   line-height: 23.4px;
 }
 
-.content-section {
-  padding-bottom: 50px;
-}
-
 .title-decor-h4 {
   font-family: 'IBM Plex mono';
   background-color: var(--accent-color);
   color: var(--color-text);
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.content-section-images {
+  padding-bottom: 40px;
 }
 
 .section-images {
@@ -269,7 +283,16 @@
 
 @media (width >= 768px) {
   .header {
-    margin: 20px 20px 20px 0px;
+    margin: 0px 20px 0px 0px;
+    max-height: 1024px;
+  }
+
+  .container-rec {
+    top: 20px
+  }
+
+  .header__theme-menu {
+    padding-top: 45px;
   }
 
   .container-intro {
@@ -277,6 +300,7 @@
     display: flex;
     justify-self: end;
     align-items: center;
+    margin-bottom: 70px;
   }
 
   .intro {
@@ -284,16 +308,21 @@
     min-width: 364px;
     padding-right: 30px;
     min-height: 120px;
-    line-height: 21.4px;
+    line-height: 23.4px;
   }
+
+  .container-header-title {
+  padding-top: 25px;
+  }
+
 
   .header .corner-bottom {
     left: 20px;
-    bottom: -10px;
+    bottom: 18px;
   }
 
   .section-main {
-    padding: 60px 20px 0px 20px;
+    padding: 50px 20px 0px 20px;
   }
 
   .hard-to-concentrate {
@@ -307,14 +336,23 @@
 
   .reduces-concentration .title-decor-h2 {
     max-width: 236px;
+    padding-bottom: 15px;
   }
 
-  .content-section:not(:last-child) {
+  .hard-to-concentrate {
     padding-bottom: 80px;
   }
 
+  .concentration-goldfish {
+    padding-bottom: 73px;
+  }
+
+  .reduces-concentration {
+    padding-bottom: 72px;
+  }
+
   .content-section:last-child {
-     padding-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .concentration-goldfish {
@@ -329,6 +367,7 @@
   .section-images {
     display: grid;
     gap: 20px;
+    max-height: 780px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
@@ -371,7 +410,7 @@
     right: 20px;
   }
 
-  .footer .corner-bottom {  
+  .footer .corner-bottom {
     left: 20px;
     bottom: 20px;
   }
@@ -385,22 +424,40 @@
     justify-self: center;
     align-items: flex-start;
     height: 100%;
+    margin-bottom: 57px;
+    margin-left: 20px;
   }
 
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-}
+    gap: 10px;
+  }
+
+  .title {
+    font-family: 'IBM Plex mono bold';
+    font-size: 157px;
+  }
+
   .container-intro {
     min-width: 491px;
-}
+  }
 
   .intro {
     min-width: 491px;
     padding: 0;
     min-height: 71px;
   }
-  
+
+  .title-decor {
+    font-size: 18px;
+    line-height: 23.4px;
+    letter-spacing: 0.1px;
+  }
+
+  .text {
+    line-height: 23.4px;
+  }
 
   .hard-to-concentrate {
     grid-template-columns: 1fr 649px;
@@ -418,23 +475,29 @@
 
   .reduces-concentration .title-decor-h2 {
     min-width: 315px;
+    padding-bottom: 20px;
   }
 
   .concentration-goldfish {
     grid-template-columns: 1fr 649px;
+    padding-top: 7px;
+    padding-bottom: 75px;
   }
 
   .concentration-goldfish .title-decor-h2 {
     max-width: 310px;
   }
-}
 
-.theme-light {
-  .rec {
-    display: none;
+  .content-section-images {
+    min-height: 1091px;
   }
 
-  .dot {
-    display: none;
+  .footer {
+    padding: 141px 20px 20px 20px;
+  }
+
+  .footer .corner-top {
+    top: 80px;
+    right: 20px;
   }
 }
