@@ -1,5 +1,5 @@
 (function initTheme() {
-    setTheme('theme-light');
+    setTheme('light');
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
