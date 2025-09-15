@@ -1,5 +1,439 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--cover-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #353430;
+  color: var(--color);
+  font-size: 18px;
+  font-family: 'IBM Plex mono';
+}
+
+.header {
+  display: grid;
+  position: relative;
+  grid-template-rows: 30px  1fr min-content 1fr;
+  height: 100vh;
+  min-height: 668px;
+  margin: 10px;
+}
+
+.container-rec {
+  position: absolute;
+  justify-self: end;
+  min-width: 60px;
+  grid-row: 1 / 2;
+}
+
+.rec {
+  position: absolute;
+  right: 30px;
+  display: inline-block;
+  color: var(--color-text-h2);
+}
+
+.dot {
+  display:  inline-flex;
+  align-items: center;
+  left: 35px;
+}
+
+.corner-top {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--color-text-h2);
+  border-right: 1px solid var(--color-text-h2);
+}
+
+.header .corner-top {
+  top: 0px;
+  right: 0px;
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 9px; 
+  height: 9px;
+  right: 11px;
+  top: 9px;
+  background-color: var(--color-text-h2); 
+  border-radius: 50%;
+  box-shadow: 0 0 4px 3px var(--color-text-h2);
+}
+
+.header__theme-menu {
+  align-self: center;
+  grid-row: 1 / 3;
+  padding-bottom: 27px;
+}
+
+.header__theme-menu-list {
+  justify-self: end;
+  flex-direction: column;
+}
+
+.header__theme-menu-item {
+  min-width: 70px;
+  min-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  color: var(--color-text-h2);
+}
+
+.header__theme-menu-item:hover {
+  outline: 1px solid var(--color-outline-transparent);
+}
+
+.header__theme-menu-button:focus {
+  display: flex;
+  justify-content: center;
+  min-width: 70px;
+  border-bottom: 1px solid var(--color-text-h2);
+}
+
+.header__theme-menu-item .header__theme-menu-button_active {
+  min-width: 70px;
+  min-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
+  outline: 1px solid var(--color-text-h2);
+}
+
+.header__theme-menu-button {
+  all: unset;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.container-header-title {
+  padding-bottom: 20px;
+  grid-row: 3 / 4;
+}
+
+.title {
+  font-family: 'IBM Plex mono bold';
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--color-h1);
+  text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.container-intro {
+  max-width: 364px;
+  justify-self: stretch;
+  align-self: center;
+  max-height: 117px;
+  margin-bottom: 5px;
+  grid-row: 4 / 5;
+  background-color: var(--accent-color);
+}
+
+.intro {
+  display: block;
+  max-width: 315px;
+  padding-right: 20px;
+  line-height: 23.4px;
+  color: var(--color-text);
+  font-family: 'IBM Plex mono bold';
+}
+
+.title-decor {
+  font-family: 'IBM Plex mono bold';
+  background-color: var(--accent-color);
+  color: var(--color-text);
+  letter-spacing: -2px;
+  line-height: 28.4px;
+  margin-bottom: 10px;
+}
+
+.with-pictures .title-decor {
+  line-height: 24.4px;
+}
+
+.corner-bottom {
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--color-text-h2);
+  border-bottom: 1px solid var(--color-text-h2);
+}
+
+.header .corner-bottom {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.section-main {
+  padding: 10px 10px  0px 10px;
+  background-color: var(--background-color);
+}
+
+.title-decor-h2 {
+  color: var(--color-text-h2);
+  font-size: 18px;
+  max-width: 355px;
+  padding-bottom: 20px;
+}
+
+.custom-link {
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+.custom-link:hover {
+  border-bottom: 1px solid var(--color);
+}
+
+.custom-link:focus {
+  outline: 1px solid var(--color);
+}
+
+.article:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.with-pictures .article {
+  padding-bottom: 1px;
+}
+
+.content-section-text {
+  line-height: 23.4px;
+}
+
+.content-section {
+  padding-bottom: 50px;
+}
+
+.title-decor-h4 {
+  font-family: 'IBM Plex mono';
+  background-color: var(--accent-color);
+  color: var(--color-text);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.section-images {
+  display: grid;
+  background-color: var(--background-color);
+  gap: 10px;
+}
+
+.images-block {
+  height: 100%;
+  max-width: 100%;
+}
+
+.footer {
+  position: relative;
+  background-color: var(--background-color);
+  height: 100vh;
+  min-height: 667px;
+  padding: 10px;
+}
+
+.footer-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .title {
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+.footer .corner-top {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.footer .corner-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+@media (width >= 768px) {
+  .header {
+    margin: 20px 20px 20px 0px;
+  }
+
+  .container-intro {
+    max-width: 364px;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .intro {
+    display: block;
+    min-width: 364px;
+    padding-right: 30px;
+    min-height: 120px;
+    line-height: 21.4px;
+  }
+
+  .header .corner-bottom {
+    left: 20px;
+    bottom: -10px;
+  }
+
+  .section-main {
+    padding: 60px 20px 0px 20px;
+  }
+
+  .hard-to-concentrate {
+    display: grid;
+    grid-template-columns: 1fr 472px;
+  }
+
+  .hard-to-concentrate .title-decor-h2 {
+    max-width: 236px;
+  }
+
+  .reduces-concentration .title-decor-h2 {
+    max-width: 236px;
+  }
+
+  .content-section:not(:last-child) {
+    padding-bottom: 80px;
+  }
+
+  .content-section:last-child {
+     padding-bottom: 60px;
+  }
+
+  .concentration-goldfish {
+    display: grid;
+    grid-template-columns: 1fr 472px;
+  }
+
+  .title-decor-images {
+    margin-bottom: 20px;
+  }
+
+  .section-images {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .sunset {
+    grid-column: 1 / 3;
+    object-fit: cover;
+  }
+
+  .ice-cream {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    object-fit: cover;
+  }
+
+  .tape {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    object-fit: cover;
+  }
+
+  .street {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    object-fit: cover;
+  }
+
+  .books {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    object-fit: cover;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer .corner-top {
+    top: 20px;
+    right: 20px;
+  }
+
+  .footer .corner-bottom {  
+    left: 20px;
+    bottom: 20px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    grid-row: 1 / 3;
+    min-width: 230px;
+    display: flex;
+    justify-self: center;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+}
+  .container-intro {
+    min-width: 491px;
+}
+
+  .intro {
+    min-width: 491px;
+    padding: 0;
+    min-height: 71px;
+  }
+
+  .hard-to-concentrate {
+    grid-template-columns: 1fr 649px;
+  }
+
+   .hard-to-concentrate .title-decor-h2 {
+    max-width: 315px;
+  }
+
+  .article-reduces-concentration {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .reduces-concentration .title-decor-h2 {
+    min-width: 315px;
+  }
+
+  .concentration-goldfish {
+    grid-template-columns: 1fr 649px;
+  }
+
+  .concentration-goldfish .title-decor-h2 {
+    max-width: 310px;
+  }
+}
+
+.theme-light {
+  .rec {
+    display: none;
+  }
+
+  .dot {
+    display: none;
+  }
 }
