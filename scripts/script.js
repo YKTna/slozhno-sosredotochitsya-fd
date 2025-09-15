@@ -1,8 +1,5 @@
 (function initTheme() {
-  const theme = localStorage.getItem('theme');
-  if (theme) {
-    setTheme(theme);
-  }
+    setTheme('theme-light');
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
