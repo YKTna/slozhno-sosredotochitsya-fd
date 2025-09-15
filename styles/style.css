@@ -322,7 +322,7 @@
   }
 
   .section-main {
-    padding: 50px 20px 0px 20px;
+    padding: 50px 20px 130px 20px;
   }
 
   .hard-to-concentrate {
@@ -483,16 +483,16 @@
   }
 
   .content-section-images {
-    min-height: 1091px;
+    height: 100vw;
   }
 
   .footer {
-    padding: 141px 20px 20px 20px;
-    min-height: 828px;
+    padding: 20px 20px 20px 20px;
+
   }
 
   .footer .corner-top {
-    top: 80px;
+    top: 20px;
     right: 20px;
   }
 }
