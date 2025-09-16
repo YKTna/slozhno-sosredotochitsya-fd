@@ -2,6 +2,7 @@
 
 
 .page {
+  background-image: var(--cover-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

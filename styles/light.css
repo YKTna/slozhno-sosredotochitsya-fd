@@ -14,10 +14,6 @@
   --accent-color: #FF8DCB;
   --color-outline-transparent: rgb(53, 52, 48, 0.4);
 
-  .page {
-    background-image: url('../images/cover-image-light.png');;
-  }
-
   .rec {
     display: none;
   }
