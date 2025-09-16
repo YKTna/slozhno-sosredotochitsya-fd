@@ -12,4 +12,8 @@
   --color-text-h2: #FF0070;
   --color-h1: #DB00FF;
   --accent-color: #FF0070;
+
+  .page {
+    background-image: url('../images/cover-image-dark.png');;
+  }
 }

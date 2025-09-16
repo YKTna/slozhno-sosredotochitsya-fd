@@ -2,7 +2,6 @@
 
 
 .page {
-  background-image: var(--cover-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -497,38 +496,5 @@
   .footer .corner-top {
     top: 20px;
     right: 20px;
-  }
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  :root.theme-auto {
-  --cover-image: url('../images/cover-image-dark.png');
-  --color: #F1B2CE;
-  --background-color: #000028;
-  --color-text: #000028;
-  --color-text-h2: #FF0070;
-  --color-h1: #DB00FF;
-  --accent-color: #FF0070;
-  }
-}
-
-@media screen and (prefers-color-scheme: light) {
-  :root.theme-auto {
-  --cover-image: url('../images/cover-image-light.png');
-  --color: #353430;
-  --background-color: #FFF1F7;
-  --color-text: #353430;
-  --color-text-h2: #353430;
-  --color-h1: #FFC2E6;
-  --accent-color: #FF8DCB;
-  --color-outline-transparent: rgb(53, 52, 48, 0.4);
-
-  .rec {
-    display: none;
-  }
-
-  .dot {
-    display: none;
-  }
   }
 }
