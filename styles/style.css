@@ -501,7 +501,7 @@
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  :root {
+  :root.theme-auto {
   --cover-image: url('../images/cover-image-dark.png');
   --color: #F1B2CE;
   --background-color: #000028;
@@ -513,7 +513,7 @@
 }
 
 @media screen and (prefers-color-scheme: light) {
-  :root {
+  :root.theme-auto {
   --cover-image: url('../images/cover-image-light.png');
   --color: #353430;
   --background-color: #FFF1F7;
