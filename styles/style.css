@@ -28,7 +28,8 @@
   min-width: 60px;
   grid-row: 1 / 2;
 }
-E
+
+.rec {
   position: absolute;
   right: 30px;
   display: inline-block;
