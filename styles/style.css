@@ -64,13 +64,8 @@
   color: var(--color-text-h2);
 }
 
-.dot {
-  display:  inline-flex;
-  align-items: center;
-  left: 35px;
-}
-
-.dot::after {
+.rec::after {
+  left: 43px;
   content: "";
   position: absolute;
   display: inline-block;
