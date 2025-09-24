@@ -10,7 +10,7 @@
   background-color: var(--background-color);
   color: var(--color);
   font-size: 18px;
-  font-family: 'IBM Plex mono';
+  font-weight: 400;
 }
 
 .header {
@@ -144,7 +144,7 @@
 }
 
 .title {
-  font-family: 'IBM Plex mono bold';
+  font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--color-h1);
@@ -165,11 +165,11 @@
   padding-right: 20px;
   line-height: 23.4px;
   color: var(--color-text);
-  font-family: 'IBM Plex mono bold';
+  font-weight: 700;
 }
 
 .title-decor {
-  font-family: 'IBM Plex mono bold';
+  font-weight: 700;
   background-color: var(--accent-color);
   color: var(--color-text);
   letter-spacing: -2px;
@@ -200,7 +200,7 @@
 
 .title-decor-subtitle {
   color: var(--color-text-h2);
-  font-family: 'IBM Plex mono bold';
+  font-weight: 700;
   font-size: 18px;
   max-width: 355px;
   padding-bottom: 20px;
@@ -233,7 +233,7 @@
 }
 
 .title-decor-subtitle-concentration-goldfish {
-  font-family: 'IBM Plex mono';
+  font-weight: 400;
   background-color: var(--accent-color);
   color: var(--color-text);
   margin-top: 20px;
@@ -403,7 +403,7 @@
   }
 
   .title {
-    font-family: 'IBM Plex mono bold';
+    font-weight: 700;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 

@@ -13,3 +13,7 @@
   --color-h1: #DB00FF;
   --accent-color: #FF0070;
 }
+
+:root.theme-dark .rec {
+  display: block;
+}
