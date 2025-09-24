@@ -2,6 +2,7 @@
 
 
 .page {
+  font-family: 'IBM Plex';
   background-image: var(--cover-image);
   background-position: center;
   background-repeat: no-repeat;
