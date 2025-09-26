@@ -2,7 +2,7 @@
 
 
 .page {
-  font-family: 'IBM Plex';
+  font-family: 'IBM Plex', Arial, Helvetica, sans-serif;
   background-image: var(--cover-image);
   background-position: center;
   background-repeat: no-repeat;
@@ -49,17 +49,10 @@
   border-bottom: 1px solid var(--color-text-h2);
 }
 
-.container-rec {
-  position: absolute;
-  justify-self: end;
-  min-width: 60px;
-  top: 10px;
-  right: 10px;
-}
-
 .rec {
   position: absolute;
-  right: 30px;
+  top: 10px;
+  right: 40px;
   display: inline-block;
   color: var(--color-text-h2);
 }
@@ -166,15 +159,16 @@
 
 .title-decor {
   font-weight: 700;
+  font-size: 18px;
   background-color: var(--accent-color);
   color: var(--color-text);
-  letter-spacing: -2px;
   line-height: 23.4px;
   margin-bottom: 10px;
 }
 
-.with-pictures .title-decor {
-  line-height: 24.4px;
+.title-decor-subtitle-concentration-goldfish {
+  font-weight: 400;
+  margin-top: 20px;
 }
 
 .section-main {
@@ -228,14 +222,6 @@
   line-height: 23.4px;
 }
 
-.title-decor-subtitle-concentration-goldfish {
-  font-weight: 400;
-  background-color: var(--accent-color);
-  color: var(--color-text);
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
 .content-section-images {
   padding-bottom: 40px;
 }
@@ -272,8 +258,6 @@
 @media (width >= 768px) {
   .header {
     padding: 20px 20px 20px 0px;
-    min-height: 668px;
-    height: 100vh;
   }
 
   .decorated-zone::after {
@@ -286,32 +270,34 @@
     bottom: 20px;
   }
 
-  .container-rec {
+  .rec {
     top: 20px;
-    right: 20px;
+    right: 50px;
   }
 
   .container-intro {
-    min-width: 364px;
+    padding-right: 35px;
     display: flex;
     justify-self: end;
     align-items: center;
-  }
-
-  .intro {
-    display: block;
-    padding-right: 25px;
-    line-height: 23.4px;
   }
 
   .section-main {
     padding: 20px 20px 0px 20px;
   }
 
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .hard-to-concentrate {
     display: grid;
-    grid-template-columns: 1fr 472px;
+    grid-template-columns:  1fr 2fr;
     padding-bottom: 80px;
+  }
+
+  .article-hard-to-concentrate {
+    margin-left: 13px;
   }
 
   .hard-to-concentrate .title-decor-subtitle {
@@ -326,7 +312,8 @@
   .concentration-goldfish {
     padding-bottom: 77px;
     display: grid;
-    grid-template-columns: 1fr 472px;
+    grid-template-columns:  1fr 2fr;
+    margin-top: 3px;
   }
 
   .reduces-concentration {
@@ -337,12 +324,19 @@
     padding-bottom: 60px;
   }
 
+  .with-pictures {
+    margin-left: 13px;
+  }
+
   .title-decor-images {
     margin-bottom: 20px;
   }
 
+  .content-section-text {
+  line-height: 23.3px;
+  }
+
   .section-images {
-    display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -398,13 +392,10 @@
     gap: 10px;
   }
 
-  .title {
-    font-weight: 700;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
   .container-intro {
     max-width: 491px;
+
+    padding-right: 1px;
   }
 
   .intro {
@@ -414,7 +405,6 @@
 
   .title-decor {
     font-size: 18px;
-    line-height: 23.4px;
     letter-spacing: 0.05px;
   }
 
@@ -422,12 +412,8 @@
     margin-top: 18px;
   }
 
-  .section-main {
-    padding: 20px 20px 0px 20px;
-  }
-
   .hard-to-concentrate {
-    grid-template-columns: 1fr 649px;
+    grid-template-columns:  1fr 2.06fr;
   }
 
   .hard-to-concentrate .title-decor-subtitle {
@@ -450,13 +436,8 @@
   }
 
   .concentration-goldfish {
-    grid-template-columns: 1fr 649px;
-    padding-top: 7px;
-    padding-bottom: 77px;
-  }
-
-  .content-section-text {
-  line-height: 23.6px;
+    grid-template-columns:  1fr 2.06fr;
+    padding-top: 6px;
   }
 
   .concentration-goldfish .title-decor-subtitle {
