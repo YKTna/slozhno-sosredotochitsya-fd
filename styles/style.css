@@ -166,9 +166,12 @@
   margin-bottom: 10px;
 }
 
+.with-pictures-title-decor {
+  margin-bottom: 20px;
+}
+
 .title-decor-subtitle-concentration-goldfish {
   font-weight: 400;
-  margin-top: 20px;
 }
 
 .section-main {
@@ -181,7 +184,11 @@
 }
 
 .text {
-    line-height: 23.4px;
+  line-height: 23.4px;
+}
+
+.content-section-text {
+  margin-bottom: 20px;
 }
 
 .concentration-goldfish {
@@ -216,10 +223,6 @@
 
 .with-pictures .article {
   padding-bottom: 1px;
-}
-
-.content-section-text {
-  line-height: 23.4px;
 }
 
 .content-section-images {
@@ -310,10 +313,17 @@
   }
 
   .concentration-goldfish {
-    padding-bottom: 77px;
+    padding-bottom: 57px;
     display: grid;
     grid-template-columns:  1fr 2fr;
-    margin-top: 3px;
+  }
+
+  .concentration-goldfish .title-decor-subtitle {
+    margin-top: 7px;
+  }
+
+  .with-pictures-title-decor {
+    margin-top: 7px;
   }
 
   .reduces-concentration {
@@ -408,10 +418,6 @@
     letter-spacing: 0.05px;
   }
 
-  .title-decor-subtitle-concentration-goldfish {
-    margin-top: 18px;
-  }
-
   .hard-to-concentrate {
     grid-template-columns:  1fr 2.06fr;
   }
@@ -437,7 +443,6 @@
 
   .concentration-goldfish {
     grid-template-columns:  1fr 2.06fr;
-    padding-top: 6px;
   }
 
   .concentration-goldfish .title-decor-subtitle {
