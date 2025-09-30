@@ -163,6 +163,9 @@
   background-color: var(--accent-color);
   color: var(--color-text);
   line-height: 23.4px;
+}
+
+.title-decor-images {
   margin-bottom: 10px;
 }
 
@@ -187,7 +190,13 @@
   line-height: 23.4px;
 }
 
-.content-section-text {
+.gap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.with-pictures .article:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -313,7 +322,7 @@
   }
 
   .concentration-goldfish {
-    padding-bottom: 57px;
+    padding-bottom: 80px;
     display: grid;
     grid-template-columns:  1fr 2fr;
   }
@@ -327,7 +336,7 @@
   }
 
   .reduces-concentration {
-    padding-bottom: 76px;
+    padding-bottom: 72px;
   }
 
   .content-section:last-child {
